@@ -1,0 +1,17 @@
+services:
+  java-web-app:
+    build: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/app
+      - sbt-cache:/root/.sbt
+      - ivy2-cache:/root/.ivy2
+    environment:
+      - SBT_OPTS=-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled
+    stdin_open: true
+    tty: true
+
+volumes:
+  sbt-cache:
+  ivy2-cache:

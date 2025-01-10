@@ -154,7 +154,7 @@ public class AwbController {
                     }
                 }
 
-                html.append("<div style='font-size:12px;'>Source codes of this service can be accessed at " + SOURCE_CODE_URL + " and may be licensed pursuant to open source MIT license.</div>");
+                // html.append("<div style='font-size:12px;'>Source codes of this service can be accessed at " + SOURCE_CODE_URL + " and may be licensed pursuant to open source MIT license.</div>");
 
                 if ((otherData.get("printingSize").equals("A4") && i < orders.size() - 1) ||
                     (otherData.get("printingSize").equals("A5") && i % 2 != 0 && i < orders.size() - 1) ||
